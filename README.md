@@ -1,239 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
-</head>
-<body>
-
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
-        <a href="#" class="w3-bar-item w3-button">Extras</a>
-        <a href="#" class="w3-bar-item w3-button">Media</a>
-      </div>
-    </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-  </div>
-</div>
-
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-</div>
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
-
-  <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/la.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Los Angeles</h3>
-      <p><b>We had the best time playing at Venice Beach!</b></p>   
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/ny.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>New York</h3>
-      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/chicago.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Chicago</h3>
-      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
-    </div>
-  </div>
-
-  <!-- The Band Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <h2 class="w3-wide">THE BAND</h2>
-    <p class="w3-opacity"><i>We love music</i></p>
-    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
-      </div>
-    </div>
-  </div>
-
-  <!-- The Tour Section -->
-  <div class="w3-black" id="tour">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">TOUR DATES</h2>
-      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
-
-      <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
-      </ul>
-
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>New York</b></p>
-            <p class="w3-opacity">Fri 27 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Paris</b></p>
-            <p class="w3-opacity">Sat 28 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>San Francisco</b></p>
-            <p class="w3-opacity">Sun 29 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Ticket Modal -->
-  <div id="ticketModal" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal w3-center w3-padding-32"> 
-        <span onclick="document.getElementById('ticketModal').style.display='none'" 
-       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
-      </header>
-      <div class="w3-container">
-        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="How many?">
-        <p><label><i class="fa fa-user"></i> Send To</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="Enter email">
-        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
-        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
-      </div>
-    </div>
-  </div>
-
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-      </div>
-      <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-        </form>
-      </div>
-    </div>
-  </div>
-  
-<!-- End Page Content -->
-</div>
-
-<!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
-
-<script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-
-</body>
-</html>
+<figure class="image" data-ckbox-resource-id="Tq62optJs2cK">
+    <picture>
+        <source srcset="https://ckbox.cloud/eae107c3e53260229dd5/assets/Tq62optJs2cK/images/324.webp 324w,https://ckbox.cloud/eae107c3e53260229dd5/assets/Tq62optJs2cK/images/648.webp 648w,https://ckbox.cloud/eae107c3e53260229dd5/assets/Tq62optJs2cK/images/972.webp 972w,https://ckbox.cloud/eae107c3e53260229dd5/assets/Tq62optJs2cK/images/1296.webp 1296w,https://ckbox.cloud/eae107c3e53260229dd5/assets/Tq62optJs2cK/images/1620.webp 1620w,https://ckbox.cloud/eae107c3e53260229dd5/assets/Tq62optJs2cK/images/1944.webp 1944w,https://ckbox.cloud/eae107c3e53260229dd5/assets/Tq62optJs2cK/images/2268.webp 2268w,https://ckbox.cloud/eae107c3e53260229dd5/assets/Tq62optJs2cK/images/2592.webp 2592w,https://ckbox.cloud/eae107c3e53260229dd5/assets/Tq62optJs2cK/images/2916.webp 2916w,https://ckbox.cloud/eae107c3e53260229dd5/assets/Tq62optJs2cK/images/3240.webp 3240w" type="image/webp" sizes="(max-width: 3240px) 100vw, 3240px"><img src="https://ckbox.cloud/eae107c3e53260229dd5/assets/Tq62optJs2cK/images/3240.jpeg" width="3240" height="1168">
+    </picture>
+</figure>
+<p>&nbsp;</p>
+<h1 style="text-align:center;">HAYES</h1>
+<p style="text-align:center;">&nbsp;</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/artist/6tKxYvNjJ1UpaNzMD0L4rY">
+        <picture>
+            <source srcset="https://ckbox.cloud/eae107c3e53260229dd5/assets/Dvt2mSg6Sx8d/images/80.webp 80w,https://ckbox.cloud/eae107c3e53260229dd5/assets/Dvt2mSg6Sx8d/images/160.webp 160w,https://ckbox.cloud/eae107c3e53260229dd5/assets/Dvt2mSg6Sx8d/images/240.webp 240w,https://ckbox.cloud/eae107c3e53260229dd5/assets/Dvt2mSg6Sx8d/images/320.webp 320w,https://ckbox.cloud/eae107c3e53260229dd5/assets/Dvt2mSg6Sx8d/images/388.webp 388w" type="image/webp" sizes="(max-width: 388px) 100vw, 388px"><img class="image_resized image-style-align-left" style="width:4.89%;" src="https://ckbox.cloud/eae107c3e53260229dd5/assets/Dvt2mSg6Sx8d/images/388.png" data-ckbox-resource-id="Dvt2mSg6Sx8d" width="388" height="388">
+        </picture>
+    </a></p>
+<h4><a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/artist/6tKxYvNjJ1UpaNzMD0L4rY">SPOTIFY</a> &nbsp;&nbsp;<a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/_.hay3s._/">
+        <picture>
+            <source srcset="https://ckbox.cloud/eae107c3e53260229dd5/assets/bQ2247nHFpf3/images/83.webp 83w,https://ckbox.cloud/eae107c3e53260229dd5/assets/bQ2247nHFpf3/images/166.webp 166w,https://ckbox.cloud/eae107c3e53260229dd5/assets/bQ2247nHFpf3/images/249.webp 249w,https://ckbox.cloud/eae107c3e53260229dd5/assets/bQ2247nHFpf3/images/332.webp 332w,https://ckbox.cloud/eae107c3e53260229dd5/assets/bQ2247nHFpf3/images/415.webp 415w,https://ckbox.cloud/eae107c3e53260229dd5/assets/bQ2247nHFpf3/images/498.webp 498w,https://ckbox.cloud/eae107c3e53260229dd5/assets/bQ2247nHFpf3/images/581.webp 581w,https://ckbox.cloud/eae107c3e53260229dd5/assets/bQ2247nHFpf3/images/664.webp 664w,https://ckbox.cloud/eae107c3e53260229dd5/assets/bQ2247nHFpf3/images/747.webp 747w,https://ckbox.cloud/eae107c3e53260229dd5/assets/bQ2247nHFpf3/images/828.webp 828w" type="image/webp" sizes="(max-width: 828px) 100vw, 828px"><img class="image_resized image-style-align-right image" style="width:32.17%;" src="https://ckbox.cloud/eae107c3e53260229dd5/assets/bQ2247nHFpf3/images/828.JPG" data-ckbox-resource-id="bQ2247nHFpf3" width="828" height="549">
+        </picture>
+    </a></h4>
+<p>
+    <picture>
+        <source srcset="https://ckbox.cloud/eae107c3e53260229dd5/assets/d5ccY15F2ktX/images/80.webp 80w,https://ckbox.cloud/eae107c3e53260229dd5/assets/d5ccY15F2ktX/images/160.webp 160w,https://ckbox.cloud/eae107c3e53260229dd5/assets/d5ccY15F2ktX/images/240.webp 240w,https://ckbox.cloud/eae107c3e53260229dd5/assets/d5ccY15F2ktX/images/320.webp 320w,https://ckbox.cloud/eae107c3e53260229dd5/assets/d5ccY15F2ktX/images/338.webp 338w" type="image/webp" sizes="(max-width: 338px) 100vw, 338px"><img class="image_resized image-style-align-left" style="width:4.97%;" src="https://ckbox.cloud/eae107c3e53260229dd5/assets/d5ccY15F2ktX/images/338.png" data-ckbox-resource-id="d5ccY15F2ktX" width="338" height="324">
+    </picture>
+</p>
+<h4><a target="_blank" rel="noopener noreferrer" href="https://hayes.bandcamp.com/">BANDCAMP</a></h4>
+<h4>
+    <picture>
+        <source srcset="https://ckbox.cloud/eae107c3e53260229dd5/assets/UO6E1CE60cE9/images/80.webp 80w,https://ckbox.cloud/eae107c3e53260229dd5/assets/UO6E1CE60cE9/images/160.webp 160w,https://ckbox.cloud/eae107c3e53260229dd5/assets/UO6E1CE60cE9/images/240.webp 240w,https://ckbox.cloud/eae107c3e53260229dd5/assets/UO6E1CE60cE9/images/318.webp 318w" type="image/webp" sizes="(max-width: 318px) 100vw, 318px"><img class="image_resized image-style-align-left" style="width:5.13%;" src="https://ckbox.cloud/eae107c3e53260229dd5/assets/UO6E1CE60cE9/images/318.png" data-ckbox-resource-id="UO6E1CE60cE9" width="318" height="292">
+    </picture>
+</h4>
+<h4><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCllf2RVcZ3vhkS0qTKZsj8Q">YOUTUBE</a></h4>
+<h4><a target="_blank" rel="noopener noreferrer" href="https://hayesmusic.gumroad.com/?_gl=1*bafipx*_ga*MTU2OTE1NTYyNS4xNjgxMzU0MDA1*_ga_6LJN6D94N6*MTcxMDE4NDU4MS4xMDQuMS4xNzEwMTg0NzIzLjAuMC4w">
+        <picture>
+            <source srcset="https://ckbox.cloud/eae107c3e53260229dd5/assets/S4GyCoq0-Cr4/images/80.webp 80w,https://ckbox.cloud/eae107c3e53260229dd5/assets/S4GyCoq0-Cr4/images/160.webp 160w,https://ckbox.cloud/eae107c3e53260229dd5/assets/S4GyCoq0-Cr4/images/240.webp 240w,https://ckbox.cloud/eae107c3e53260229dd5/assets/S4GyCoq0-Cr4/images/320.webp 320w,https://ckbox.cloud/eae107c3e53260229dd5/assets/S4GyCoq0-Cr4/images/400.webp 400w,https://ckbox.cloud/eae107c3e53260229dd5/assets/S4GyCoq0-Cr4/images/480.webp 480w,https://ckbox.cloud/eae107c3e53260229dd5/assets/S4GyCoq0-Cr4/images/560.webp 560w,https://ckbox.cloud/eae107c3e53260229dd5/assets/S4GyCoq0-Cr4/images/606.webp 606w" type="image/webp" sizes="(max-width: 606px) 100vw, 606px"><img class="image_resized" style="width:6.66%;" src="https://ckbox.cloud/eae107c3e53260229dd5/assets/S4GyCoq0-Cr4/images/606.png" data-ckbox-resource-id="S4GyCoq0-Cr4" width="606" height="172">
+        </picture>GUM ROAD
+    </a></h4>
+<figure class="image image_resized image-style-align-left" style="width:2.36%;" data-ckbox-resource-id="gncUOVO_kreN">
+    <picture>
+        <source srcset="https://ckbox.cloud/eae107c3e53260229dd5/assets/gncUOVO_kreN/images/80.webp 80w,https://ckbox.cloud/eae107c3e53260229dd5/assets/gncUOVO_kreN/images/160.webp 160w,https://ckbox.cloud/eae107c3e53260229dd5/assets/gncUOVO_kreN/images/240.webp 240w,https://ckbox.cloud/eae107c3e53260229dd5/assets/gncUOVO_kreN/images/258.webp 258w" type="image/webp" sizes="(max-width: 258px) 100vw, 258px"><img src="https://ckbox.cloud/eae107c3e53260229dd5/assets/gncUOVO_kreN/images/258.png" width="258" height="241">
+    </picture>
+</figure>
+<h4><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/_.hay3s._/">INSTAGRAM</a></h4>
+<p>&nbsp;</p>
+<p style="text-align:center;">&nbsp;</p>
+<p style="text-align:center;">&nbsp;</p>
+<p style="text-align:center;">&nbsp;</p>
+<p style="text-align:center;">&nbsp;</p>
+<h1 style="text-align:center;">&nbsp;</h1>
+<h1 style="text-align:center;">&nbsp;</h1>
+<h1 style="text-align:center;">&nbsp;</h1>
+<h1 style="text-align:center;">CONTACT</h1>
+<p style="text-align:center;">(415)-518-5589</p>
+<p style="text-align:center;"><a href="mailto:Andrewchanover@gmail.com">Andrewchanover@gmail.com</a></p>
+<p style="text-align:center;">&nbsp;</p>
